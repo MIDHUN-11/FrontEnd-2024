@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myid">click me</button>
+    <input type="text" id="id2">
+    <script>
+        let mybtn= document.getElementById("myid");
+        let inp = document.getElementById("id2");
+        console.log(mybtn);
+        mybtn.onclick=()=>{
+            alert("you clicked the button   ")
+        }
+        mybtn.onmouseover=()=>{
+            console.log("hovering")
+        }
+        inp.onkeydown=(e)=>{
+            console.log("down",e.target.value)
+        }
+    </script>
+</body>
+</html>

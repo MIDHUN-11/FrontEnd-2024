@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="jumpMenu">navigate</label>
+        <select id="jumpMenu" onchange="navigation()">
+            <option value="">1st value</option>
+            <option value="test1.html">test1</option>
+            <option value="utube">youtube</option>
+        </select>
+    </form>
+    <script>
+        function navigation(){
+            console.log("line1");
+            let selectedOption = document.getElementById("jumpMenu");
+            console.log(selectedOption);
+            if(selectedOption=="utube")
+            {
+                window.location.href = "https://www.youtube.com/";
+            }
+            // else 
+        }
+    </script>
+</body>
+
+</html>
