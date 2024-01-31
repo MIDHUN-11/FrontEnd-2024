@@ -1,0 +1,17 @@
+/* styles.css */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* grid-template-columns: (1fr); */
+    gap: 10px; 
+  }
+  
+  .child {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+ .one{
+    background-color: green;
+ }
