@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <h1 id="val"></h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // let plsbtn=document.getElementById("plus");
+        // let minbtn=document.getElementById("minus");
+        let count=0;
+        // plsbtn.onclick=()=>{
+        //     if(count<10){
+        //     count=count+1;
+        //     console.log(count);}
+        // }
+        // minbtn.onclick=()=>{
+        //     if(count>0){
+        //     count=count-1;
+        //     console.log(count);}
+        // }
+        $(plus).click(()=>{
+            count=count+1;
+            console.log(count);
+            $('#val').text(count);
+        })
+        $(minus).click(()=>{
+            count=count-1;
+            console.log(count);
+            $('#val').text(count);
+        })
+        $('#val').text(count);
+    </script>
+</body>
+</html>
