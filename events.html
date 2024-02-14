@@ -9,18 +9,28 @@
     <button id="myid">click me</button>
     <input type="text" id="id2">
     <script>
-        let mybtn= document.getElementById("myid");
-        let inp = document.getElementById("id2");
-        console.log(mybtn);
-        mybtn.onclick=()=>{
-            alert("you clicked the button   ")
+        let btn=document.getElementById('myid');
+        // console.log(btn);
+        btn.onclick=()=>{
+            console.log("btn is clicked");
         }
-        mybtn.onmouseover=()=>{
-            console.log("hovering")
+        btn.onmouseenter=()=>{
+            console.log("mouse entered button/hovered");
         }
-        inp.onkeydown=(e)=>{
-            console.log("down",e.target.value)
-        }
+       btn.onmouseleave=()=>{
+        console.log("mouse left the button");
+       }
+       let inputEvent=document.getElementById("id2");
+       inputEvent.onkeydown=()=>{
+        console.log("key is pressed down");
+       }
+       inputEvent.onkeyup=()=>{
+        console.log("key is released and its up");
+       }
+       window.onresize=()=>{
+        // console.log("dont exit screen");
+        alert("dont exit screen")
+       }
     </script>
 </body>
 </html>
