@@ -44,9 +44,15 @@ function fname(){
 }
 // fname();
 var b="outside function"
-// console.log(a);
+// console.log(a); //gives reference error
 var c=20;
+// if(c==20){
+//     var d="inside if block"
+// }
+// console.log(d);
+// let=block scope
 if(c==20){
-    var d="inside if block"
+    let e="inside block";
+    console.log(e);
 }
-console.log(d);
+console.log(e);
