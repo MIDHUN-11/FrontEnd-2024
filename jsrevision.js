@@ -37,22 +37,59 @@
 
 // var=global or functional scope
 // var a=30;
-fname();
-function fname(){
-    var a="inside function";
-    console.log(a);
-}
 // fname();
-var b="outside function"
+// function fname(){
+//     var a="inside function";
+//     console.log(a);
+// }
+// fname();
+// var b="outside function"
 // console.log(a); //gives reference error
-var c=20;
+// var c=20;
 // if(c==20){
 //     var d="inside if block"
 // }
 // console.log(d);
 // let=block scope
-if(c==20){
-    let e="inside block";
-    console.log(e);
-}
-console.log(e);
+// if(c==20){
+//     let e="inside block";
+//     console.log(e);
+// }
+// console.log(e);
+
+// functions=>block of code which is reusable
+// eg=> lets assume i have 100 lines of code that needs to be executed twice
+// named function
+// function fname(){
+//     console.log("this is named function");
+// }
+// fname();
+// synchronous vs asynchronus
+// js is synchronous by default
+// sync
+// console.log("1");
+// console.log("2");
+// console.log("3");
+// async
+// setTimeout is async by default
+// console.log("1");
+// setTimeout(()=>{
+//     console.log("inside settimeout");
+// },0);
+
+// console.log("2");
+// async function fname(){
+//     // console.log("this is async function");
+//     setTimeout(()=>{
+//             console.log("inside settimeout");
+//         },0);
+// }
+// fname();
+// console.log("this is sync");
+
+// setInterval(()=>{
+//     console.log("this is interval");
+// },4000);
+// readfile
+// writefile
+// fetch
