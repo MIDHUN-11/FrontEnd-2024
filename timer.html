@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <h1 id="timer">00:00:00</h1>
+    <button id="btn1" onclick="startFunction()">start</button>
+    <button id="btn1">stop</button>
+    <button id="btn1">reset</button>
+    <script>
+        let timeIntrvl;
+        let totalSec=0;
+        const displaytime=document.getElementById("timer")
+        const startFunction=()=>{
+            timeIntrvl=setInterval(timerFunction,1000);
+        }
+        const timerFunction=()=>{
+            totalSec++;
+            const hr=Math.floor(totalSec/3600);
+            const min=Math.floor((totalSec%3600)/60);
+            const sec=totalSec % 60;
+            let time=hr+"-"+min+"-"+sec;    
+            displaytime.innerText=time;
+        }
+    </script>
+</body>
+</html>
+
