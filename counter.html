@@ -8,15 +8,31 @@
 <body>
     <button id="plus" onclick="incrementFunction()">+</button>
     <button id="minus" onclick="decrementFunction()">-</button>
+    <p id="countDisp"></p>
     <script>
         let count=0;
+        const disp=document.getElementById("countDisp");
         function incrementFunction(){
+            if(count>=10){
+                console.log("count exceeeded 10 cant proceed");
+                // disp.innerText="count exceeeded 10 cant proceed";
+            }
+            else{
             count++;
-            console.log(count);
+            // console.log(count);
+            // disp.innerText=count;
+        }
+        disp.innerText=count;
         }
         function decrementFunction(){
+            if(count<=0){
+                console.log("cant get negative value");
+            }
+            else{
             count--;
-            console.log(count);
+            // console.log(count);
+            disp.innerText=count;
+        }
         }
     </script>
 </body>
