@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myid">this page is for understanding jquey</p>
+    <h2 id="id2">this is for animation</h2>
+    <button id="btn">click</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            $("p").css("color","red")
+            // $("#id2").hide();
+            // $("#id2").show();
+            // $("#id2").fadeOut();
+            // $("#id2").fadeIn();
+            $("#btn").click(()=>{{
+                alert("button is clicked")
+            }})
+        })
+    </script>
+</body>
+</html>
+
+<!-- selector action -->
